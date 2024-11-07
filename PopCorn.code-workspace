@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Documentos/Projects/The-original-popcorn"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PopCorn"
+	}
+}
