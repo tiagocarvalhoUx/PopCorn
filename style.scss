@@ -5,12 +5,12 @@
     outline: 0;
   }
 
-  @import "./partials/colors";
-  @import "./partials/header";
-  @import "./partials/layout";
-  @import "./partials/video";
-  @import "./partials/layout2";
-  @import "./partials/galeria";
+  @import "./partials/partials/colors";
+  @import "./partials/partials/header";
+  @import "./partials/partials/layout";
+  @import "./partials/partials/video";
+  @import "./partials/partials/layout2";
+  @import "./partials/partials/galeria";
 
 
   body{
