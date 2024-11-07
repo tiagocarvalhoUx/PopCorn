@@ -1,0 +1,158 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+//BG-Home
+
+#bg-home{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 200%;
+}
+
+#bg-home video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bg-home::after{
+    content: '';
+
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, 10,12,16, 0.99) 15%, rgba(10,12,16, 0.7) 50%,;
+}
+
+
+// Hero====================
+
+.hero-container{
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    margin-top: 40%;
+
+    h1{
+        display: block;
+        margin-left: 40%;
+        margin-top: -52%;
+        text-align: center;
+        max-width: 940px;
+        font-size: 30px;
+        padding: 15px;
+        word-spacing: 10px;
+        font-style: italic;
+    }
+           
+    h3{
+       display: block;
+       font:lighter;
+       font-size: 25px;
+       line-height: 35px;
+       margin-left: 40%;
+       margin-top: 10%;
+       width: 60%;
+       text-align: center;
+    }
+       
+}
+  
+.img-01{
+    width: 40%;
+    height: 100%;
+    margin-right: auto;
+    object-fit: cover;
+    border: 8px solid $white-light;
+    box-shadow: 5px 5px 5px $black-light;
+    flex-grow: 2; 
+    margin-top: 100px;
+}
+.button-contact{
+    padding: 14px 28px;
+    color: white;
+    background-color:$red-normal ;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 40%;
+    margin-top: 10%;
+    box-shadow: 3px 3px 5px $white-light;
+}
+
+.button-contact:hover{
+   
+    animation: translate 1.5s infinite alternate;
+    background-color: red;
+}
+   
+@keyframes translate {
+    from{
+
+        transform: translate(0) scale(1) ;
+    }
+    to{
+        transform: translateY(-8px) scale(1.2);
+    }
+   
+}
+@media screen and (max-width:768px){
+    #bg-home{
+        width: 100%;
+        height: 100%;
+    }
+    .hero{
+        min-height: 60vh;
+        
+        h1{
+            font-size: 15px;
+            padding:0 14px;
+            width: 100%;
+        }
+    }
+
+    .hero-container{
+        margin-top: 60%;
+    }
+    h3{
+        display: block;
+        align-items: center;
+        text-align: justify;
+        margin-right: 1%;
+        word-spacing: 1px;
+        width: 100%;
+        padding: 14px 14px;
+    }      
+        
+    .button-contact{
+       margin: auto;
+       margin-top: 10%;
+
+    }
+        
+     
+
+    @media screen and (max-width: 480px){
+        .hero h1 h2 h3{
+            font-size: 24px;
+        }
+    }
+
+    .button-contact{
+       margin-right: 60px;
+    }
+    .img-01{
+        margin-left: 8px;
+        
+    }
+}
+ //=========== Fim Hero===============///    
+   

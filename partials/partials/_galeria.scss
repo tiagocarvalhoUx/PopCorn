@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    
+}
+    
+
+h8{
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+    margin-top: 15%;
+    font-family: sora sans-serif;
+    font-style:italic;
+    text-decoration: underline;
+    
+}
+
+h9{
+    display: block;
+    font-size: 18px;
+    font: bold;
+    text-align: center;
+    align-items: center;
+    padding: 34px 14px;
+    margin-top: 5%;
+}
+    
+ .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+ .gallery-items{
+    height: 250px;
+    width: 350px;
+    border: 10px solid $white-normal;
+    box-shadow: 5px 5px 5px $black-light;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-container .gallery-items img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+    
+.gallery-container .gallery-items:hover img{
+    transform: scale(1.3);
+}
+
+.popup-imag{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 50%;
+    width: 50%;
+    z-index: 100;
+    display: none;
+    
+}
+    
+.popup-imag span{
+    position: absolute;
+    margin-top: 20%;
+    top: 0;
+    left: 140%;
+    font-size: 40px;
+    color: $red-light;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-imag img{
+    position: relative;
+    display: flex;
+    top: 20%;
+    margin-top: 60%;
+    margin-left: 100%;
+    transform: translate(-50%, -50%);
+    border: 5px solid $white-dark;
+    border-radius: 5px;
+    width: 20px;
+    object-fit: cover;
+}
+
+    
+
+.footer-logo{
+    display: block;
+    align-items: center;
+    height: 20%;
+    margin-top: 25%;
+    width: 120px;
+    margin: auto;
+}
+
+iframe{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 25%;
+    border-radius: 60px;
+    width: 100%;
+    padding: 34px 14px;
+}
+    
+
+//-----------Footer---------//
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0 ;
+    gap: 80px;
+    color: $white-normal;
+       
+}
+
+.footer-icons{
+    gap: 20px;
+    display: flex;
+    color: $white-normal;
+    font-size: 12px; 
+}
+
+.logo{
+    width: 150px;
+}
+
+// Botao whatsapp
+
+.btn-whatsapp{
+        position: fixed;
+        bottom: 14px;
+        right: 24px;
+        z-index: 99;
+        
+    
+    img{
+        max-width: 75px;
+        transition: transform 0.4s;
+    }
+        
+        
+
+    img:hover{
+        transform: scale(1.15);
+        z-index: 1;
+       
+    }
+
+}
+
+    @media screen and (max-width: 768px){
+    .btn-whatsapp img{
+        max-width: 50px;
+    }
+}
+   
+.popup-imag img{
+    width: 95%;
+}
+  
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    font-size: 13px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}

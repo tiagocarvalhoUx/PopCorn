@@ -1,0 +1,167 @@
+
+
+
+header{
+    width: 100%;
+    max-width: 1440px;
+    padding: 5px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem {
+    opacity: 0.9;
+    background-color: $white-light;
+    padding: 5px;
+}
+
+header.rolagem li  {
+    color: $red-dark;
+}
+
+header.rolagem i {
+    color: $red-dark;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    color:$white-normal;
+}  
+
+.navigation-social i:hover{
+    opacity: 1;
+    color: $red-dark;
+    transform: translateY(-5px);
+    animation: translatey 0.8s infinite alternate;
+    cursor: pointer;
+}
+
+.header-links{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: auto;
+    font-size: 16px;
+    font-style:oblique;
+    font-family: "Sora", sans-serif;
+    font-weight: 900; 
+    text-transform: uppercase;   
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.header-links a:hover{
+    li{
+        animation: translatey 0.8s infinite alternate;
+        color: $red-dark;
+    }
+}
+li::after{
+    content: '';
+    position: fixed;
+    right: 90%;
+    bottom: 4px;
+    width: 70%;
+    height: 2px;
+    background: $red-dark;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: transform 0.8s;
+}
+li:hover::after{
+    transform: scaleX(-1);
+    transform-origin:right;
+}
+
+@keyframes translatey {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.2);
+    }
+}
+li{
+    color:$white-normal;
+}
+a:link{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.header-icons{
+    display: flex;
+    gap: 20px;
+   
+}
+
+
+.header-icons i:hover{
+    opacity: 1;
+    color: $red-dark;
+    transform: translateY(-5px);
+    animation: translatey 0.8s infinite alternate;
+    cursor: pointer;
+}
+
+.header-logo{
+    
+    margin:auto;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header-logo img{
+        width: 150px;
+        margin-top: 10px;
+        margin: auto;
+        
+    }
+    .header-links{
+        margin-top: 30px;
+        gap: 50px;
+        font-size: 18px;
+        margin-right: 50px;
+        
+    }
+    .header-icons{
+        
+        gap: 50px;
+        font-size: 12px;
+        margin:auto;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+    
+
+
+
