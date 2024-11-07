@@ -44,7 +44,7 @@ i{
 
 .header-links{
     display: flex;
-    gap: 350px;
+    gap: 35px;
     list-style: none;
     margin: auto;
     font-size: 16px;
@@ -104,7 +104,8 @@ a:link{
 
 .header-icons{
     display: flex;
-    gap: 20px;
+    padding: 15px 20px;
+    gap: 60px;
    
 }
 
@@ -119,7 +120,7 @@ a:link{
 
 .header-logo{
     
-    margin:auto;
+    margin: auto;
     width: 20%;
     align-items: center;
     justify-content: center;
@@ -137,20 +138,22 @@ a:link{
     
     .header-logo img{
         width: 150px;
-        margin-top: 50%;
+        margin-top:10%;
+        
     }
         
         
     .header-links{
-      width:100%;
+        margin-top: 15px;
+        width:100%;
         gap: 8%;
     }
     .header-icons{
         
-        gap: 150%;
+        gap: 50%;
         font-size: 12px;
-        margin:auto;
-        padding: 10px;
+        margin: auto;
+        
     }
 }
 

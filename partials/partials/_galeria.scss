@@ -64,17 +64,20 @@ h9{
 .popup-imag{
     position: fixed;
     top: 0%;
-    left: 0%;
+    left: 20%;
     height: 50%;
-    width: 50%;
+    width: 30%;
     z-index: 100;
     display: none;
+    margin: auto;
+    margin-top: 20%;
     
 }
     
 .popup-imag span{
     position: absolute;
-    margin-top: 20%;
+    margin-top: -10%;
+    margin-left: 100px;
     top: 0;
     left: 140%;
     font-size: 40px;
@@ -174,7 +177,12 @@ iframe{
 }
    
 .popup-imag img{
-    width: 160%;
+    width: 150%;
+    margin-top: 40%;
+}
+
+.popup-imag span{
+    margin-top: -15%;
 }
   
 .btn-whatsapp .tooltip-text{
@@ -196,4 +204,18 @@ iframe{
 .btn-whatsapp:hover .tooltip-text{
     visibility: visible;
     opacity: 1;
+}
+
+//media screen .popup-imag img
+
+
+@media screen and (max-width: 768px){
+    .popup-imag img{
+        width: 250%;
+        margin-top: 150%;
+    }
+
+    .popup-imag span{
+        margin-top: 80%;
+    }
 }
