@@ -137,7 +137,7 @@ a:link {
     justify-content: center;
   }
   .header-logo img {
-    width: 150px;
+    width: 60px;
     margin-top: 10%;
   }
   .header-links {
@@ -146,9 +146,9 @@ a:link {
     gap: 8%;
   }
   .header-icons {
-    gap: 50%;
+    gap: 40%;
     font-size: 12px;
-    margin: auto;
+    margin-right: 15%;
   }
 }
 .container {
