@@ -137,7 +137,7 @@ a:link {
     justify-content: center;
   }
   .header-logo img {
-    width: 60px;
+    width: 80px;
     margin-top: 10%;
   }
   .header-links {
@@ -708,12 +708,12 @@ iframe {
 
 @media screen and (max-width: 768px) {
   .popup-imag img {
-    width: 320%;
+    width: 310%;
     height: 60%;
-    margin-top: 110%;
+    margin-top: 230%;
   }
   .popup-imag span {
-    margin-top: 50%;
+    margin-top: 150%;
     margin-left: 110%;
   }
 }
