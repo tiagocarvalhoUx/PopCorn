@@ -211,11 +211,13 @@ iframe{
 
 @media screen and (max-width: 768px){
     .popup-imag img{
-        width: 250%;
-        margin-top: 150%;
+        width: 320%;
+        height: 60%;
+        margin-top: 110%;
     }
 
     .popup-imag span{
-        margin-top: 80%;
+        margin-top: 50%;
+        margin-left: 110%;
     }
 }
